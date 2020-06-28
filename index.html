@@ -23,11 +23,11 @@
                         <input class="form__input" type="text" name="name" pattern="[А-ЯЁ][а-яё]{1,}(-[А-ЯЁ]{1,}[а-яё]{1,})?" placeholder="Имя" minlength="2" maxlength="20" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="email" pattern="[A-Za-z\d]{1,}([-_\.][A-Za-z\d]{1,}){0,}@[A-Za-z\d]{1,}([-_\.][A-Za-z\d]{1,}){0,}\.[A-Za-z]{1,4}" placeholder="E-Mail" required />
+                        <input class="form__input" type="text" name="email" pattern="[\w\d]{1,}([-_\.][\w\d]{1,}){0,}@[\w\d]{1,}([-_\.][\w\d]{1,}){0,}\.[\w]{1,4}" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="" minlength="" maxlength="18"  required/>
+                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="\+?\d+(-{0,1}\(\d+\)(([ -]{0,1}\d+)))*([ -]\d+)*" minlength="" maxlength="18"  required/>
                         <span class="form__error">Недопустимый формат номера</span>
                     </div>
                     <div class="form__field">
