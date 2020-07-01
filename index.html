@@ -27,11 +27,11 @@
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="\+?\d+(-{0,1}\(\d+\)(([ -]{0,1}\d+)))*([ -]\d+)*" minlength="" maxlength="18"  required/>
+                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="\+?\d(\d{10}|(((\(\d{3}\)\s?)|(\s\d{3}-))\d{3}-\d{2}-\d{2}))" minlength="" maxlength="18"  required/>
                         <span class="form__error">Недопустимый формат номера</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="url" pattern="(http:|https:)\/\/((((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9]))|((www.)?\w+(-\w+)*(\.\w+(-\w+)*)+))(:\d+)*(\/\w*(-\w+)*#{0,1})*" placeholder="Ваш сайт" required/>
+                        <input class="form__input" type="text" name="url" pattern="(http:|https:)\/\/((((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d))|((www.)?\w+(-\w+)*(\.\w+(-\w+)*)+))(:(6553[0-5]|655[0-2]\d|65[0-4]\d\d|6[0-4]\d\d\d|[1-5]\d\d\d\d|[1-9]\d\d\d|[1-9]\d\d|[1-9]\d|[1-9]))*(((\/\w+)+(#|\/)?)|\/)?" placeholder="Ваш сайт" required/>
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="text">Отправить</button>
